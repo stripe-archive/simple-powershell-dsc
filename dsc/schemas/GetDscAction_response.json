@@ -1,0 +1,29 @@
+{
+    "title": "GetDscAction response",
+    "type": "object",
+    "properties": {
+        "Details": {
+            "type": "array",
+            "items": [
+                {
+                    "type": "object",
+                    "properties": {
+                        "ConfigurationName": {
+                            "type": "string",
+                            "required": true
+                        },
+                        "Status": {
+                            "type": "string",
+                            "enum": [ "OK", "RETRY", "GetConfiguration", "UpdateMetaConfiguration" ],
+                            "required": true
+                        }
+                    }
+                }
+            ]
+        },
+        "NodeStatus": {
+            "type": "string",
+            "enum": [ "OK", "RETRY", "GetConfiguration", "UpdateMetaConfiguration" ]
+        }
+    }
+}

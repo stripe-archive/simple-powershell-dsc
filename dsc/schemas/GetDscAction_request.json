@@ -1,0 +1,29 @@
+{
+    "title": "GetDscAction request schema (AgentID)",
+    "type": "object",
+    "properties": {
+        "ClientStatus": {
+            "items": [
+                {
+                    "properties": {
+                        "Checksum": {
+                            "type": [ "string", "null" ]
+                        },
+                        "ChecksumAlgorithm": {
+                            "description": "Checksum algorithm used to generate checksum",
+                            "type": [ "string", "null" ],
+                            "enum": [ "SHA-256" ]
+                        },
+                        "ConfigurationName": {
+                            "type": [ "string", "null" ]
+                        }
+                    },
+                    "type": "object"
+                }
+            ],
+            "minItems": 1,
+            "type": "array",
+            "uniqueItems": true
+        }
+    }
+}

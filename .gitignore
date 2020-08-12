@@ -1,0 +1,6 @@
+# Binary
+/simple-dsc
+
+# Go coverage files
+/cover.out
+/cover.html

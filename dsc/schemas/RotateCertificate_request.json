@@ -1,0 +1,40 @@
+{
+    "title": "RotateCertificate request",
+    "type": "object",
+    "properties": {
+        "RotationInformation": {
+            "type": "object",
+            "properties": {
+                "CertificateInformation": {
+                    "type": "object",
+                    "properties": {
+                        "FriendlyName": {
+                            "type": [ "string", "null" ]
+                        },
+                        "Issuer": {
+                            "type": [ "string", "null" ]
+                        },
+                        "NotAfter": {
+                            "type": [ "string", "null" ]
+                        },
+                        "NotBefore": {
+                            "type": [ "string", "null" ]
+                        },
+                        "PublicKey": {
+                            "type": [ "string", "null" ]
+                        },
+                        "Subject": {
+                            "type": [ "string", "null" ]
+                        },
+                        "Thumbprint": {
+                            "type": [ "string", "null" ]
+                        },
+                        "Version": {
+                            "type": [ "integer", "null" ]
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
